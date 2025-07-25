@@ -23,6 +23,10 @@
 .inter-paragraph-2{
     font-weight: bold;
 }
+body{
+    max-width: 1140px;
+    margin: auto;
+}
 .navber-1{
     display: flex;
     justify-content: space-between;
@@ -69,14 +73,15 @@
     gap: 20px;
 }
 .section-4{
-    gap: 30px;
-    padding: 100px;
+    gap: 40px;
+    padding: 70px;
 }
 .trusted-badge{
     align-items: center;
     height: 150px;
     width: 150px;
 }
+
 .shop{
     color: white;
    
@@ -132,19 +137,47 @@ input{
     height: 433px;
     align-items: center;
 }
-.input-button{
-    display: inline;
-    
-    margin: 20px 20px;
-}
+
 footer{
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
     margin: 60px;
     gap: 20px;
 }
+.trusted-badge{
+   position: absolute;
+  
+}
+.badge-2{
+    margin-left: -100px;
+    margin-top: -40px;
+}
+.input-button-2{
+    display: flex !important;
+    justify-content: center ;
+    
+}
+
 /* responsive for small device */
-@media screen(max-width: 576px) {
+@media screen and (max-width: 576px){
+    body{
+        width: 100%;
+        margin: auto;
+        padding: 0;
+    }
+    .imagr-item{
+        display: none;
+    }
+    .section-1 ,.section-2 ,.section-3 , .imge-item , .section-4 ,.section-5 , .section-6 , footer{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .trusted-badge{
+        display: none;
+    }
+    .header-font{
+        font-size: 30px;
+    }
     
 }
 
